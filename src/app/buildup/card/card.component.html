@@ -1,0 +1,55 @@
+<div class="out-card h-100 d-flex justify-content-center" >
+  <main *ngFor="let product of products">
+    <svg height="300" width="200" class="svg1" style="position: absolute">
+      <path
+        id="lineAC"
+        d="M 0 0 0 270"
+        stroke="black"
+        fill="none"
+        stroke-width="5"
+      ></path>
+      <path
+        id="lineAC"
+        d="M 0 267 31 304"
+        stroke="black"
+        fill="none"
+        stroke-width="5"
+      ></path>
+      <path
+        id="lineAC"
+        d="M 0 0 300 0"
+        stroke="black"
+        fill="none"
+        stroke-width="5"
+      ></path>
+      <path
+        id="lineAC"
+        d="M 200 0 200 300"
+        stroke="black"
+        fill="none"
+        stroke-width="5"
+      ></path>
+      <path
+        id="lineAC"
+        d="M 170 302 200 267"
+        stroke="black"
+        fill="none"
+        stroke-width="5"
+      ></path>
+      <path
+        id="lineAC"
+        d="M 0 300 200 300"
+        stroke="black"
+        fill="none"
+        stroke-width="5"
+      ></path>
+    </svg>
+    <div class="top-border"></div>
+    <div class="card d-flex">
+      <img [src]="product.imageUrl" alt="" />
+      <h6>{{product.name}}</h6>
+      <button>ADD</button>
+    </div>
+  </main>
+</div>
+

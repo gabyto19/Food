@@ -1,0 +1,42 @@
+main{
+    height: 100%;
+    width: 200px;
+    min-width: 200px;
+    background-color: #8EB193;
+    clip-path: polygon(100% 0, 0 0, 0 89%, 14% 100%, 86% 100%, 100% 89%);
+}
+svg{
+    position: absolute;
+}
+.top-border{
+    width: 100%;
+    height: 30px;
+    background-color: #FFFBEA;
+    border: solid 2px black;
+}
+.card{
+    width: 160px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 22px;
+    border-radius: 30px;
+    background: linear-gradient(#FFFBEA, #FFA757);
+    border: none;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 7px 14px 4px;
+}
+.card img{
+    height: 70px;
+    margin-top: 20px;
+}
+.card button{
+    margin-top: 30px;
+    height: 40px;
+    width: 95px;
+    border-radius: 50px;
+    border: none;
+    background: #8EB193;
+    font-size: 20px;
+}

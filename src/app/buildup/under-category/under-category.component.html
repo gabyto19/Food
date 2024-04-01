@@ -1,0 +1,6 @@
+<div class="test" [ngSwitch]="categoryOfProduct">
+  <div *ngSwitchCase="'food'"><app-food></app-food></div>
+  <div *ngSwitchCase="'drink'"><app-drink></app-drink></div>
+  <div *ngSwitchCase="'sweet'"><app-sweet></app-sweet></div>
+  <div *ngSwitchDefault><app-food></app-food></div>
+</div>
