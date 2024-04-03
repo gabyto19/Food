@@ -5,6 +5,9 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class SharedService {
+  getCurrentValue(): any {
+    throw new Error('Method not implemented.');
+  }
   private _sharedVariable = new BehaviorSubject<string>('Initial Value');
   
   sharedVariable$ = this._sharedVariable.asObservable();

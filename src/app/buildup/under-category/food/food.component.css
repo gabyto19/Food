@@ -7,7 +7,10 @@ img {
   border-radius: 15px;
   box-shadow: 5px 5px 15px 1px;
 }
-.fixer div{
+.fixer div {
   position: relative;
   top: 8px;
+}
+.fixer:hover {
+  cursor: pointer; /* Change to any cursor style you want */
 }

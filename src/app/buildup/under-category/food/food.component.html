@@ -3,8 +3,9 @@
     <div class="row">
       <div
         *ngFor="let product of products"
-        [ngClass]="{ 'selected-item': product.id == 1 }"
+        [ngClass]="{ 'selected-item': product.id == selectedCategory }"
         class="col-4 fixer"
+        (click)="selected(product.id)"
       >
         <div class="d-flex justify-content-center">
           <img

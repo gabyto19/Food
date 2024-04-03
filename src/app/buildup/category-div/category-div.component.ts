@@ -11,5 +11,6 @@ export class CategoryDivComponent {
   changeComponentBValue(category:any) {
     const newValue = category;
     this.sharedService.changeSharedVariable(newValue);
+    localStorage.setItem('product', JSON.stringify(category));
   }
 }

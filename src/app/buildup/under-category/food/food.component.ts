@@ -3,9 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-food',
   templateUrl: './food.component.html',
-  styleUrl: './food.component.css'
+  styleUrl: './food.component.css',
 })
 export class FoodComponent {
+  selectedCategory: any;
+
   products: any[] = [
     {
       id: 1,
@@ -33,4 +35,8 @@ export class FoodComponent {
       imageUrl: '/assets/imgs/foodproducts/icons8-wrap-100.png',
     },
   ];
+
+  selected(selectId: any) {
+    this.selectedCategory = selectId;
+  }
 }

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './sweet.component.css'
 })
 export class SweetComponent {
+  selectedCategory:any;
   products: any[] = [
     {
       id: 1,
@@ -28,4 +29,8 @@ export class SweetComponent {
       imageUrl: '/assets/imgs/desserts/muffin.png',
     },
   ];
+  selected(selectId:any)
+  {
+    this.selectedCategory = selectId;
+  }
 }

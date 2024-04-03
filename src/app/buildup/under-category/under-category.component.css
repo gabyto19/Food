@@ -1,0 +1,21 @@
+img {
+  height: 40px;
+  width: 40px;
+}
+.selected-item {
+  border: solid 3px #ff7a00;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 1px;
+}
+.fixer div {
+  position: relative;
+  top: 8px;
+}
+.fixer:hover {
+  cursor: pointer; /* Change to any cursor style you want */
+}
+.prod-text {
+  position: absolute;
+  top: -25px;
+  left: 140px;
+}
