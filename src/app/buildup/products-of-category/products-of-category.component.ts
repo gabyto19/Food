@@ -166,9 +166,10 @@ export class ProductsOfCategoryComponent {
     );
     this.valueChangeSubscription = this.sharedService.sharedCategory$.subscribe(
       (category) => {
-        this.category = category;
+        this.category = category 
       }
     );
+    console.log(this.category);
   }
 
   ngOnDestroy() {
