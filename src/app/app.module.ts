@@ -13,10 +13,6 @@ import { NoteComponent } from './buildup/note/note.component';
 import { PlateComponent } from './buildup/plate/plate.component';
 import { UnderCategoryComponent } from './buildup/under-category/under-category.component';
 import { ProductsOfCategoryComponent } from './buildup/products-of-category/products-of-category.component';
-import { BurgerProductComponent } from './buildup/products-of-category/burger-product/burger-product.component';
-import { FoodComponent } from './buildup/under-category/food/food.component';
-import { DrinkComponent } from './buildup/under-category/drink/drink.component';
-import { SweetComponent } from './buildup/under-category/sweet/sweet.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +27,6 @@ import { SweetComponent } from './buildup/under-category/sweet/sweet.component';
     PlateComponent,
     UnderCategoryComponent,
     ProductsOfCategoryComponent,
-    BurgerProductComponent,
-    FoodComponent,
-    DrinkComponent,
-    SweetComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

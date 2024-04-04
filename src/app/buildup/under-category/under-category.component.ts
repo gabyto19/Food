@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Subscription, findIndex } from 'rxjs';
 import { SharedService } from '../../shared.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { SharedService } from '../../shared.service';
   styleUrl: './under-category.component.css',
 })
 export class UnderCategoryComponent {
+  selectedName: any;
   arrayNum: any;
   products: any[] = [
     [
@@ -18,23 +19,18 @@ export class UnderCategoryComponent {
       },
       {
         id: 2,
-        name: 'Fries',
-        imageUrl: '/assets/imgs/foodproducts/icons8-french-fries-96.png',
+        name: 'Sandwich',
+        imageUrl: '/assets/imgs/foodproducts/sandwich.png',
       },
       {
         id: 3,
-        name: 'Burger',
-        imageUrl: '/assets/imgs/foodproducts/icons8-hamburger-94.png',
+        name: 'Wrap',
+        imageUrl: '/assets/imgs/foodproducts/icons8-wrap-100.png',
       },
       {
         id: 4,
-        name: 'Pizza',
-        imageUrl: '/assets/imgs/foodproducts/icons8-pizza-100.png',
-      },
-      {
-        id: 5,
-        name: 'Wrap',
-        imageUrl: '/assets/imgs/foodproducts/icons8-wrap-100.png',
+        name: 'Soup',
+        imageUrl: '/assets/imgs/foodproducts/flame-soup.png',
       },
     ],
     [
@@ -101,6 +97,10 @@ export class UnderCategoryComponent {
         this.arrayNum = newValue;
       }
     );
+  }
+
+  selectProduct(value: any) {
+    this.selectedName = value;
   }
 
   ngOnInit(): any {

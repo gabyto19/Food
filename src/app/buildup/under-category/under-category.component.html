@@ -1,7 +1,12 @@
 <main class="mt-4">
   <div class="container">
     <div class="row">
-      <div class="col-4 fixer" *ngFor="let product of products[arrayNum]">
+      <div
+        class="col-4 fixer"
+        *ngFor="let product of products[arrayNum]"
+        (click)="selectProduct(product.name)"
+        [ngClass]="{ 'selected-item': product.name == selectedName }"
+      >
         <div class="d-flex justify-content-center">
           <img
             [src]="product.imageUrl"
