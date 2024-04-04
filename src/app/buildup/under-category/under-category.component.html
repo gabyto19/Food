@@ -3,8 +3,8 @@
     <div class="row">
       <div
         class="col-4 fixer"
-        *ngFor="let product of products[arrayNum]"
-        (click)="selectProduct(product.name)"
+        *ngFor="let product of products[arrayNum]; let i = index"
+        (click)="selectProduct(product.name); takeIndex(i)"
         [ngClass]="{ 'selected-item': product.name == selectedName }"
       >
         <div class="d-flex justify-content-center">
@@ -22,3 +22,4 @@
     </div>
   </div>
 </main>
+<!-- left top box -->

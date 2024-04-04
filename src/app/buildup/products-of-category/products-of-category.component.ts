@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+import { Subscription, findIndex } from 'rxjs';
+import { SharedService } from '../../shared.service';
 
 @Component({
   selector: 'app-products-of-category',
@@ -7,7 +9,8 @@ import { Component } from '@angular/core';
 })
 export class ProductsOfCategoryComponent {
   foodProducts: any[] = [
-    [//Breakfast category
+    [
+      //Breakfast category
       {
         id: 1,
         name: 'Bread',
@@ -50,7 +53,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/Breakfast-products/fruit.png',
       },
     ],
-    [//Sandwich category
+    [
+      //Sandwich category
       {
         id: 1,
         name: 'Bacon',
@@ -82,7 +86,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/Sandwich-products/vegetable.png',
       },
     ],
-    [//Wrap category
+    [
+      //Wrap category
       {
         id: 2,
         name: 'Meat',
@@ -109,7 +114,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/burger-products/vegetable.png',
       },
     ],
-    [//Soup category
+    [
+      //Soup category
       {
         id: 1,
         name: 'Bacon',
@@ -144,16 +150,30 @@ export class ProductsOfCategoryComponent {
   ];
   selectedName: any;
   arrayNum: any;
-
+  category: any;
   selectProduct(value: any) {
     this.selectedName = value;
   }
 
-  ngOnInit(): any {
-    const productString = localStorage.getItem('product');
-    if (productString !== null) {
-      this.arrayNum = JSON.parse(productString);
+  ngOnInit(): any {}
+  private valueChangeSubscription: Subscription;
+
+  constructor(private sharedService: SharedService) {
+    this.valueChangeSubscription = this.sharedService.sharedIndex$.subscribe(
+      (index) => {
+        this.arrayNum = index;
+      }
+    );
+    this.valueChangeSubscription = this.sharedService.sharedCategory$.subscribe(
+      (category) => {
+        this.category = category;
+      }
+    );
+  }
+
+  ngOnDestroy() {
+    if (this.valueChangeSubscription) {
+      this.valueChangeSubscription.unsubscribe();
     }
-    this.arrayNum = 3;
   }
 }

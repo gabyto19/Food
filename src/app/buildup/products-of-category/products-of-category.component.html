@@ -1,13 +1,13 @@
 <main class="mt-4">
   <div class="container">
-    <div class="row">
+    <div class="row" *ngIf="category == 0">  <!-- FOOD category -->
       <div
         class="col-4 fixer"
         *ngFor="let product of foodProducts[arrayNum]"
         (click)="selectProduct(product.name)"
         [ngClass]="{ 'selected-item': product.name == selectedName }"
       >
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center" >
           <img
             [src]="product.imageUrl"
             alt="{{ product.name }}"
@@ -16,9 +16,10 @@
           />
         </div>
         <div>
-          <p class="text-center">{{ product.name }}</p>
+          <p class="text-center" >{{ product.name }}</p>
         </div>
       </div>
     </div>
   </div>
 </main>
+<!-- left-bottom box -->

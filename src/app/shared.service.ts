@@ -12,7 +12,19 @@ export class SharedService {
   
   sharedVariable$ = this._sharedVariable.asObservable();
 
+  private _sharedIndex = new BehaviorSubject<string>('Initial Value');
+  
+  sharedIndex$ = this._sharedIndex.asObservable();
+
+  private _sharedCategory = new BehaviorSubject<string>('Initial Value');
+  
+  sharedCategory$ = this._sharedCategory.asObservable();
+
   constructor() { }
+  changeSharedIndex(index: string,category:any) {
+    this._sharedIndex.next(index);
+    this._sharedCategory.next(category);
+  }
 
   changeSharedVariable(newValue: string) {
     this._sharedVariable.next(newValue);

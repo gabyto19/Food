@@ -102,6 +102,9 @@ export class UnderCategoryComponent {
   selectProduct(value: any) {
     this.selectedName = value;
   }
+  takeIndex(index: any) {
+    this.sharedService.changeSharedIndex(index,this.arrayNum);
+  }
 
   ngOnInit(): any {
     const productString = localStorage.getItem('product');
