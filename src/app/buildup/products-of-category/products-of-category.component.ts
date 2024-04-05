@@ -211,21 +211,36 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/soda-products/energy.png',
       },
     ],
-    [//Caffee Category
+    [//Coffee Category
       {
         id: 1,
-        name: 'Natural Water',
-        imageUrl: '/assets/imgs/water-products/water.png',
+        name: 'Cappuccino',
+        imageUrl: '/assets/imgs/coffee-products/cappuccino.png',
       },
       {
         id: 2,
-        name: 'Sparkled Water',
-        imageUrl: '/assets/imgs/water-products/sparkled.png',
+        name: 'espresso',
+        imageUrl: '/assets/imgs/coffee-products/espresso.png',
       },
       {
         id: 3,
-        name: 'Water with Fruit',
-        imageUrl: '/assets/imgs/water-products/fruited.png',
+        name: 'Latte',
+        imageUrl: '/assets/imgs/coffee-products/Latte.png',
+      },
+      {
+        id: 4,
+        name: 'Americano',
+        imageUrl: '/assets/imgs/coffee-products/Americano.png',
+      },
+      {
+        id: 5,
+        name: 'Macchiata',
+        imageUrl: '/assets/imgs/coffee-products/macchiata.png',
+      },
+      {
+        id: 6,
+        name: 'Ice Latte',
+        imageUrl: '/assets/imgs/coffee-products/Ice latte.png',
       },
     ],
     [//Tea Category
