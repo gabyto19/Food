@@ -187,18 +187,28 @@ export class ProductsOfCategoryComponent {
     [//Soda Category
       {
         id: 1,
-        name: 'Natural Water',
-        imageUrl: '/assets/imgs/water-products/water.png',
+        name: 'Coca-Cola',
+        imageUrl: '/assets/imgs/soda-products/cola.png',
       },
       {
         id: 2,
-        name: 'Sparkled Water',
-        imageUrl: '/assets/imgs/water-products/sparkled.png',
+        name: 'Fanta',
+        imageUrl: '/assets/imgs/soda-products/fanta.png',
       },
       {
         id: 3,
-        name: 'Water with Fruit',
-        imageUrl: '/assets/imgs/water-products/fruited.png',
+        name: 'Pepsi',
+        imageUrl: '/assets/imgs/soda-products/pepsi.png',
+      },
+      {
+        id: 4,
+        name: 'Sprite',
+        imageUrl: '/assets/imgs/soda-products/sprite.png',
+      },
+      {
+        id: 5,
+        name: 'Energy',
+        imageUrl: '/assets/imgs/soda-products/energy.png',
       },
     ],
     [//Caffee Category
