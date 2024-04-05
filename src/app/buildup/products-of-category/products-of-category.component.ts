@@ -148,6 +148,111 @@ export class ProductsOfCategoryComponent {
       },
     ],
   ];
+
+  drinkProducts: any[] = [
+    [//Water Category
+      {
+        id: 1,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/water-products/water.png',
+      },
+      {
+        id: 2,
+        name: 'Sparkled Water',
+        imageUrl: '/assets/imgs/water-products/sparkled.png',
+      },
+      {
+        id: 3,
+        name: 'Water with Fruit',
+        imageUrl: '/assets/imgs/water-products/fruited.png',
+      },
+    ],
+    [//Juice Category
+      {
+        id: 1,
+        name: 'One juice',
+        imageUrl: '/assets/imgs/juice-products/one.png',
+      },
+      {
+        id: 2,
+        name: 'Sparkled Water',
+        imageUrl: '/assets/imgs/juice-products/mix.png',
+      },
+      {
+        id: 3,
+        name: 'Water with Fruit',
+        imageUrl: '/assets/imgs/juice-products/fresh.png',
+      },
+    ],
+    [//Soda Category
+      {
+        id: 1,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/water-products/water.png',
+      },
+      {
+        id: 2,
+        name: 'Sparkled Water',
+        imageUrl: '/assets/imgs/water-products/sparkled.png',
+      },
+      {
+        id: 3,
+        name: 'Water with Fruit',
+        imageUrl: '/assets/imgs/water-products/fruited.png',
+      },
+    ],
+    [//Caffee Category
+      {
+        id: 1,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/water-products/water.png',
+      },
+      {
+        id: 2,
+        name: 'Sparkled Water',
+        imageUrl: '/assets/imgs/water-products/sparkled.png',
+      },
+      {
+        id: 3,
+        name: 'Water with Fruit',
+        imageUrl: '/assets/imgs/water-products/fruited.png',
+      },
+    ],
+    [//Tea Category
+      {
+        id: 1,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/water-products/water.png',
+      },
+      {
+        id: 2,
+        name: 'Sparkled Water',
+        imageUrl: '/assets/imgs/water-products/sparkled.png',
+      },
+      {
+        id: 3,
+        name: 'Water with Fruit',
+        imageUrl: '/assets/imgs/water-products/fruited.png',
+      },
+    ],
+    [//Beer Category
+      {
+        id: 1,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/water-products/water.png',
+      },
+      {
+        id: 2,
+        name: 'Sparkled Water',
+        imageUrl: '/assets/imgs/water-products/sparkled.png',
+      },
+      {
+        id: 3,
+        name: 'Water with Fruit',
+        imageUrl: '/assets/imgs/water-products/fruited.png',
+      },
+    ],
+  ];
   selectedName: any;
   arrayNum: any;
   category: any;
@@ -166,7 +271,7 @@ export class ProductsOfCategoryComponent {
     );
     this.valueChangeSubscription = this.sharedService.sharedCategory$.subscribe(
       (category) => {
-        this.category = category 
+        this.category = category;
       }
     );
     console.log(this.category);
