@@ -14,43 +14,43 @@ export class ProductsOfCategoryComponent {
       {
         id: 1,
         name: 'Bread',
-        imageUrl: '/assets/imgs/Breakfast-products/bread.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/bread.png',
       },
       {
         id: 2,
         name: 'Cheese',
-        imageUrl: '/assets/imgs/Breakfast-products/cheese.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/cheese.png',
       },
       {
         id: 3,
         name: 'Egg',
-        imageUrl: '/assets/imgs/Breakfast-products/egg.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/egg.png',
       },
       {
         id: 4,
         name: 'Meat',
-        imageUrl: '/assets/imgs/Breakfast-products/meat.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/meat.png',
       },
       {
         id: 5,
         name: 'Sausage',
-        imageUrl: '/assets/imgs/Breakfast-products/sausage.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/sausage.png',
       },
 
       {
         id: 6,
         name: 'Sauce',
-        imageUrl: '/assets/imgs/Breakfast-products/sauce.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/sauce.png',
       },
       {
         id: 7,
         name: 'Potato',
-        imageUrl: '/assets/imgs/Breakfast-products/potato.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/potato.png',
       },
       {
         id: 8,
         name: 'Fruit',
-        imageUrl: '/assets/imgs/Breakfast-products/fruit.png',
+        imageUrl: '/assets/imgs/eatsproduct/Breakfast-products/fruit.png',
       },
     ],
     [
@@ -58,32 +58,32 @@ export class ProductsOfCategoryComponent {
       {
         id: 1,
         name: 'Bacon',
-        imageUrl: '/assets/imgs/Sandwich-products/bacon.png',
+        imageUrl: '/assets/imgs/eatsproduct/Sandwich-products/bacon.png',
       },
       {
         id: 2,
         name: 'Bread',
-        imageUrl: '/assets/imgs/Sandwich-products/bread.png',
+        imageUrl: '/assets/imgs/eatsproduct/Sandwich-products/bread.png',
       },
       {
         id: 3,
         name: 'Cheese',
-        imageUrl: '/assets/imgs/Sandwich-products/cheese.png',
+        imageUrl: '/assets/imgs/eatsproduct/Sandwich-products/cheese.png',
       },
       {
         id: 4,
         name: 'Egg',
-        imageUrl: '/assets/imgs/Sandwich-products/egg.png',
+        imageUrl: '/assets/imgs/eatsproduct/Sandwich-products/egg.png',
       },
       {
         id: 5,
         name: 'Sauce',
-        imageUrl: '/assets/imgs/Sandwich-products/sauce.png',
+        imageUrl: '/assets/imgs/eatsproduct/Sandwich-products/sauce.png',
       },
       {
         id: 6,
         name: 'Vegetable',
-        imageUrl: '/assets/imgs/Sandwich-products/vegetable.png',
+        imageUrl: '/assets/imgs/eatsproduct/Sandwich-products/vegetable.png',
       },
     ],
     [
@@ -91,27 +91,27 @@ export class ProductsOfCategoryComponent {
       {
         id: 2,
         name: 'Meat',
-        imageUrl: '/assets/imgs/wrap-products/meat.png',
+        imageUrl: '/assets/imgs/eatsproduct/wrap-products/meat.png',
       },
       {
         id: 3,
         name: 'Bread',
-        imageUrl: '/assets/imgs/wrap-products/bread.png',
+        imageUrl: '/assets/imgs/eatsproduct/wrap-products/bread.png',
       },
       {
         id: 4,
         name: 'Cheese',
-        imageUrl: '/assets/imgs/burger-products/cheese.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/cheese.png',
       },
       {
         id: 5,
         name: 'Sauce',
-        imageUrl: '/assets/imgs/burger-products/sauce.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/sauce.png',
       },
       {
         id: 6,
         name: 'Vegetable',
-        imageUrl: '/assets/imgs/burger-products/vegetable.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/vegetable.png',
       },
     ],
     [
@@ -119,32 +119,32 @@ export class ProductsOfCategoryComponent {
       {
         id: 1,
         name: 'Bacon',
-        imageUrl: '/assets/imgs/burger-products/bacon.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/bacon.png',
       },
       {
         id: 2,
         name: 'Beef',
-        imageUrl: '/assets/imgs/burger-products/beef.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/beef.png',
       },
       {
         id: 3,
         name: 'Bread',
-        imageUrl: '/assets/imgs/burger-products/bread.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/bread.png',
       },
       {
         id: 4,
         name: 'Cheese',
-        imageUrl: '/assets/imgs/burger-products/cheese.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/cheese.png',
       },
       {
         id: 5,
         name: 'Sauce',
-        imageUrl: '/assets/imgs/burger-products/sauce.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/sauce.png',
       },
       {
         id: 6,
         name: 'Vegetable',
-        imageUrl: '/assets/imgs/burger-products/vegetable.png',
+        imageUrl: '/assets/imgs/eatsproduct/burger-products/vegetable.png',
       },
     ],
   ];
@@ -154,128 +154,158 @@ export class ProductsOfCategoryComponent {
       {
         id: 1,
         name: 'Natural Water',
-        imageUrl: '/assets/imgs/water-products/water.png',
+        imageUrl: '/assets/imgs/drink-products/water-products/water.png',
       },
       {
         id: 2,
         name: 'Sparkled Water',
-        imageUrl: '/assets/imgs/water-products/sparkled.png',
+        imageUrl: '/assets/imgs/drink-products/water-products/sparkled.png',
       },
       {
         id: 3,
         name: 'Water with Fruit',
-        imageUrl: '/assets/imgs/water-products/fruited.png',
+        imageUrl: '/assets/imgs/drink-products/water-products/fruited.png',
       },
     ],
     [//Juice Category
       {
         id: 1,
         name: 'One juice',
-        imageUrl: '/assets/imgs/juice-products/one.png',
+        imageUrl: '/assets/imgs/drink-products/juice-products/one.png',
       },
       {
         id: 2,
         name: 'Sparkled Water',
-        imageUrl: '/assets/imgs/juice-products/mix.png',
+        imageUrl: '/assets/imgs/drink-products/juice-products/mix.png',
       },
       {
         id: 3,
         name: 'Water with Fruit',
-        imageUrl: '/assets/imgs/juice-products/fresh.png',
+        imageUrl: '/assets/imgs/drink-products/juice-products/fresh.png',
       },
     ],
     [//Soda Category
       {
         id: 1,
         name: 'Coca-Cola',
-        imageUrl: '/assets/imgs/soda-products/cola.png',
+        imageUrl: '/assets/imgs/drink-products/soda-products/cola.png',
       },
       {
         id: 2,
         name: 'Fanta',
-        imageUrl: '/assets/imgs/soda-products/fanta.png',
+        imageUrl: '/assets/imgs/drink-products/soda-products/fanta.png',
       },
       {
         id: 3,
         name: 'Pepsi',
-        imageUrl: '/assets/imgs/soda-products/pepsi.png',
+        imageUrl: '/assets/imgs/drink-products/soda-products/pepsi.png',
       },
       {
         id: 4,
         name: 'Sprite',
-        imageUrl: '/assets/imgs/soda-products/sprite.png',
+        imageUrl: '/assets/imgs/drink-products/soda-products/sprite.png',
       },
       {
         id: 5,
         name: 'Energy',
-        imageUrl: '/assets/imgs/soda-products/energy.png',
+        imageUrl: '/assets/imgs/drink-products/soda-products/energy.png',
       },
     ],
     [//Coffee Category
       {
         id: 1,
         name: 'Cappuccino',
-        imageUrl: '/assets/imgs/coffee-products/cappuccino.png',
+        imageUrl: '/assets/imgs/drink-products/coffee-products/cappuccino.png',
       },
       {
         id: 2,
         name: 'espresso',
-        imageUrl: '/assets/imgs/coffee-products/espresso.png',
+        imageUrl: '/assets/imgs/drink-products/coffee-products/espresso.png',
       },
       {
         id: 3,
         name: 'Latte',
-        imageUrl: '/assets/imgs/coffee-products/Latte.png',
+        imageUrl: '/assets/imgs/drink-products/coffee-products/Latte.png',
       },
       {
         id: 4,
         name: 'Americano',
-        imageUrl: '/assets/imgs/coffee-products/Americano.png',
+        imageUrl: '/assets/imgs/drink-products/coffee-products/Americano.png',
       },
       {
         id: 5,
         name: 'Macchiata',
-        imageUrl: '/assets/imgs/coffee-products/macchiata.png',
+        imageUrl: '/assets/imgs/drink-products/coffee-products/macchiata.png',
       },
       {
         id: 6,
         name: 'Ice Latte',
-        imageUrl: '/assets/imgs/coffee-products/Ice latte.png',
+        imageUrl: '/assets/imgs/drink-products/coffee-products/Ice latte.png',
       },
     ],
     [//Tea Category
       {
         id: 1,
-        name: 'Natural Water',
-        imageUrl: '/assets/imgs/water-products/water.png',
+        name: 'Ginger',
+        imageUrl: '/assets/imgs/drink-products/tea-products/Ginger Tea.png',
       },
       {
         id: 2,
-        name: 'Sparkled Water',
-        imageUrl: '/assets/imgs/water-products/sparkled.png',
+        name: 'Hibiscus',
+        imageUrl: '/assets/imgs/drink-products/tea-products/hibiscus.png',
       },
       {
         id: 3,
-        name: 'Water with Fruit',
-        imageUrl: '/assets/imgs/water-products/fruited.png',
+        name: 'Jasmine',
+        imageUrl: '/assets/imgs/drink-products/tea-products/jasmine tea.png',
+      },
+      {
+        id: 4,
+        name: 'Matca green',
+        imageUrl: '/assets/imgs/drink-products/tea-products/matca green tea.png',
+      },
+      {
+        id: 5,
+        name: 'Peppermint',
+        imageUrl: '/assets/imgs/drink-products/tea-products/peppermint.png',
+      },
+      {
+        id: 6,
+        name: 'Pu-erh',
+        imageUrl: '/assets/imgs/drink-products/tea-products/pu-erh.png',
       },
     ],
     [//Beer Category
       {
         id: 1,
         name: 'Natural Water',
-        imageUrl: '/assets/imgs/water-products/water.png',
+        imageUrl: '/assets/imgs/drink-products/beer-products/1.png',
       },
       {
         id: 2,
         name: 'Sparkled Water',
-        imageUrl: '/assets/imgs/water-products/sparkled.png',
+        imageUrl: '/assets/imgs/drink-products/beer-products/2.png',
       },
       {
         id: 3,
         name: 'Water with Fruit',
-        imageUrl: '/assets/imgs/water-products/fruited.png',
+        imageUrl: '/assets/imgs/drink-products/beer-products/3.png',
       },
+      {
+        id: 4,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/drink-products/beer-products/4.png',
+      },
+      {
+        id: 5,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/drink-products/beer-products/5.png',
+      },
+      {
+        id: 6,
+        name: 'Natural Water',
+        imageUrl: '/assets/imgs/drink-products/beer-products/6.png',
+      }
     ],
   ];
   selectedName: any;
