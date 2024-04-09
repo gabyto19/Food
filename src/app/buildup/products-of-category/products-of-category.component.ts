@@ -373,7 +373,7 @@ export class ProductsOfCategoryComponent {
       },
     ],
     [
-      //Cookie category
+      //Donut category
       {
         id: 1,
         name: 'Chocolate',
@@ -398,6 +398,34 @@ export class ProductsOfCategoryComponent {
         id: 5,
         name: 'Vanilla',
         imageUrl: '/assets/imgs/dessert-products/donut-products/5.png',
+      },
+    ],
+    [
+      //Muffin category
+      {
+        id: 1,
+        name: 'Chocolate',
+        imageUrl: '/assets/imgs/dessert-products/muffin-products/1.png',
+      },
+      {
+        id: 2,
+        name: 'Nuts',
+        imageUrl: '/assets/imgs/dessert-products/muffin-products/2.png',
+      },
+      {
+        id: 3,
+        name: 'Fruit',
+        imageUrl: '/assets/imgs/dessert-products/muffin-products/3.png',
+      },
+      {
+        id: 4,
+        name: 'Mix',
+        imageUrl: '/assets/imgs/dessert-products/muffin-products/4.png',
+      },
+      {
+        id: 5,
+        name: 'Vanilla',
+        imageUrl: '/assets/imgs/dessert-products/muffin-products/5.png',
       },
     ],
   ];
