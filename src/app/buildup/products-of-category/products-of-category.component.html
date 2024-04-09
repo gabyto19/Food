@@ -44,9 +44,9 @@
     </div>
     <div class="row" *ngSwitchCase="'1'">
       <!-- desserts category -->
-      <!-- <div
+      <div
         class="col-4 fixer"
-        *ngFor="let product of foodProducts[arrayNum]"
+        *ngFor="let product of dessertsProducts[arrayNum]"
         (click)="selectProduct(product.name)"
         [ngClass]="{ 'selected-item': product.name == selectedName }"
       >
@@ -61,7 +61,7 @@
         <div>
           <p class="text-center" >{{ product.name }}</p>
         </div>
-      </div> -->
+      </div>
     </div>
     <div *ngSwitchDefault></div>
   </div>

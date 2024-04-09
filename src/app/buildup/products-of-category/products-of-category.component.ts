@@ -150,7 +150,8 @@ export class ProductsOfCategoryComponent {
   ];
 
   drinkProducts: any[] = [
-    [//Water Category
+    [
+      //Water Category
       {
         id: 1,
         name: 'Natural Water',
@@ -167,7 +168,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/drink-products/water-products/fruited.png',
       },
     ],
-    [//Juice Category
+    [
+      //Juice Category
       {
         id: 1,
         name: 'One juice',
@@ -184,7 +186,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/drink-products/juice-products/fresh.png',
       },
     ],
-    [//Soda Category
+    [
+      //Soda Category
       {
         id: 1,
         name: 'Coca-Cola',
@@ -211,7 +214,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/drink-products/soda-products/energy.png',
       },
     ],
-    [//Coffee Category
+    [
+      //Coffee Category
       {
         id: 1,
         name: 'Cappuccino',
@@ -243,7 +247,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/drink-products/coffee-products/Ice latte.png',
       },
     ],
-    [//Tea Category
+    [
+      //Tea Category
       {
         id: 1,
         name: 'Ginger',
@@ -262,7 +267,8 @@ export class ProductsOfCategoryComponent {
       {
         id: 4,
         name: 'Matca green',
-        imageUrl: '/assets/imgs/drink-products/tea-products/matca green tea.png',
+        imageUrl:
+          '/assets/imgs/drink-products/tea-products/matca green tea.png',
       },
       {
         id: 5,
@@ -275,7 +281,8 @@ export class ProductsOfCategoryComponent {
         imageUrl: '/assets/imgs/drink-products/tea-products/pu-erh.png',
       },
     ],
-    [//Beer Category
+    [
+      //Beer Category
       {
         id: 1,
         name: 'Natural Water',
@@ -305,7 +312,93 @@ export class ProductsOfCategoryComponent {
         id: 6,
         name: 'Natural Water',
         imageUrl: '/assets/imgs/drink-products/beer-products/6.png',
-      }
+      },
+    ],
+  ];
+  dessertsProducts: any[] = [
+    [
+      //Cake category
+      {
+        id: 1,
+        name: 'Chocolate',
+        imageUrl: '/assets/imgs/dessert-products/cake-products/1.png',
+      },
+      {
+        id: 2,
+        name: 'nuts',
+        imageUrl: '/assets/imgs/dessert-products/cake-products/2.png',
+      },
+      {
+        id: 3,
+        name: 'fruit',
+        imageUrl: '/assets/imgs/dessert-products/cake-products/3.png',
+      },
+      {
+        id: 4,
+        name: 'mix',
+        imageUrl: '/assets/imgs/dessert-products/cake-products/4.png',
+      },
+      {
+        id: 5,
+        name: 'vanilla',
+        imageUrl: '/assets/imgs/dessert-products/cake-products/5.png',
+      },
+    ],
+    [
+      //Cookie category
+      {
+        id: 1,
+        name: 'Chocolate',
+        imageUrl: '/assets/imgs/dessert-products/cookie-products/1.png',
+      },
+      {
+        id: 2,
+        name: 'Nuts',
+        imageUrl: '/assets/imgs/dessert-products/cookie-products/2.png',
+      },
+      {
+        id: 3,
+        name: 'Fruit',
+        imageUrl: '/assets/imgs/dessert-products/cookie-products/3.png',
+      },
+      {
+        id: 4,
+        name: 'Mix',
+        imageUrl: '/assets/imgs/dessert-products/cookie-products/4.png',
+      },
+      {
+        id: 5,
+        name: 'Vanilla',
+        imageUrl: '/assets/imgs/dessert-products/cookie-products/5.png',
+      },
+    ],
+    [
+      //Cookie category
+      {
+        id: 1,
+        name: 'Chocolate',
+        imageUrl: '/assets/imgs/dessert-products/donut-products/1.png',
+      },
+      {
+        id: 2,
+        name: 'Nuts',
+        imageUrl: '/assets/imgs/dessert-products/donut-products/2.png',
+      },
+      {
+        id: 3,
+        name: 'Fruit',
+        imageUrl: '/assets/imgs/dessert-products/donut-products/3.png',
+      },
+      {
+        id: 4,
+        name: 'Mix',
+        imageUrl: '/assets/imgs/dessert-products/donut-products/4.png',
+      },
+      {
+        id: 5,
+        name: 'Vanilla',
+        imageUrl: '/assets/imgs/dessert-products/donut-products/5.png',
+      },
     ],
   ];
   selectedName: any;
