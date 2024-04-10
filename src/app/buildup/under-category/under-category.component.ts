@@ -1,5 +1,5 @@
-import { Component, OnDestroy } from '@angular/core';
-import { Subscription, findIndex } from 'rxjs';
+import { Component } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { SharedService } from '../../shared.service';
 
 @Component({
@@ -22,16 +22,16 @@ export class UnderCategoryComponent {
         name: 'Sandwich',
         imageUrl: '/assets/imgs/foodproducts/sandwich.png',
       },
-      {
-        id: 3,
-        name: 'Wrap',
-        imageUrl: '/assets/imgs/foodproducts/icons8-wrap-100.png',
-      },
-      {
-        id: 4,
-        name: 'Soup',
-        imageUrl: '/assets/imgs/foodproducts/flame-soup.png',
-      },
+      // { Not Aviableeeeeeeeees
+      //   id: 3,
+      //   name: 'Wrap',
+      //   imageUrl: '/assets/imgs/foodproducts/icons8-wrap-100.png',
+      // },
+      // {
+      //   id: 4,
+      //   name: 'Soup',
+      //   imageUrl: '/assets/imgs/foodproducts/flame-soup.png',
+      // },
     ],
     [
       {

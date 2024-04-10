@@ -1,3 +1,7 @@
-<main>
-    <img src="/assets/imgs/plate.png" alt="" >
+<main *ngIf="category == '0'">
+    <div [ngSwitch]="plate">
+        <div *ngSwitchCase="'plate'"><img src="/assets/imgs/plate.png" alt="" ></div>
+        <div *ngSwitchCase="'b-plate'"><img src="/assets/imgs/b-plate.png" alt=""></div>
+        <div *ngSwitchDefault></div>
+      </div>      
 </main>

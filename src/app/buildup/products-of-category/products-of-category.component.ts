@@ -450,7 +450,6 @@ export class ProductsOfCategoryComponent {
         this.category = category;
       }
     );
-    console.log(this.category);
   }
 
   ngOnDestroy() {
