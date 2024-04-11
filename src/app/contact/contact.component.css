@@ -1,7 +1,7 @@
-main{
-  height:600px;
-  overflow:visible;
-  background-color: #FFFBEA;
+main {
+  height: 600px;
+  overflow: visible;
+  background-color: #fffbea;
 }
 .grid-container {
   display: flex;
@@ -10,11 +10,14 @@ main{
   width: 60%;
   margin: auto;
 }
-
 .grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 20px;
   border: 1px solid #ccc;
   cursor: pointer;
-  transition: all 0.6s ease-in-out;
-  flex: 1; /* Start with equal size */
+  transition: all 0.3s ease;
+  flex: 1; /* Adapt based on the layout */
+  /* Remove any fixed height if previously set */
 }

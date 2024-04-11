@@ -13,11 +13,17 @@ import {
   styleUrl: './contact.component.css',
   animations: [
     trigger('growShrink', [
-      state('shrink', style({ flex: '1' })),
-      state('grow', style({ flex: '2' })),
-      transition('shrink <=> grow', animate('300ms ease-in-out')),
-    ]),
-  ],
+      state('shrink', style({
+        height: '200px', // Default height
+        flex: '1'
+      })),
+      state('grow', style({
+        height: '300px', // Expanded height
+        flex: '2'
+      })),
+      transition('shrink <=> grow', animate('300ms ease-in-out'))
+    ])
+  ]
 })
 export class ContactComponent {
   contacts = [
