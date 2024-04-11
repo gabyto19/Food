@@ -1,0 +1,13 @@
+<main>
+  <div class="grid-container">
+    <div
+      *ngFor="let contact of contacts"
+      class="grid-item"
+      [@growShrink]="contact.expanded ? 'grow' : 'shrink'"
+      (click)="toggleContact(contact)"
+    >
+      <h3>{{ contact.name }}</h3>
+      <p *ngIf="contact.expanded">{{ contact.description }}</p>
+    </div>
+  </div>
+</main>
