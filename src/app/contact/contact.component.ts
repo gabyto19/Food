@@ -45,6 +45,12 @@ export class ContactComponent {
       description: 'Contact details for William Johnson',
       expanded: false,
     },
+    {
+      id: 4,
+      name: 'William Johnson',
+      description: 'Contact details for William Johnson',
+      expanded: false,
+    },
   ];
 
   toggleContact(selectedContact: any): void {

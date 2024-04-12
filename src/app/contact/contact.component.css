@@ -1,3 +1,10 @@
+header
+{
+  background-image: url("/assets/imgs/Contact/background.png");
+  height: 563px;
+  background-size: inherit;
+}
+
 main {
   height: 600px;
   overflow: visible;
