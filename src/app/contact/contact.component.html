@@ -1,16 +1,54 @@
-<header>
-    
-</header>
+<header></header>
 <main>
   <div class="grid-container">
     <div
       *ngFor="let contact of contacts"
       class="grid-item"
       [@growShrink]="contact.expanded ? 'grow' : 'shrink'"
-      (click)="toggleContact(contact)"
+      (click)="click(contact.id)"
     >
-      <h3>{{ contact.name }}</h3>
-      <p *ngIf="contact.expanded">{{ contact.description }}</p>
+      <img
+        [src]="contact.imageUrl"
+        alt="{{ contact.name }}"
+        width="100"
+        height="100"
+        *ngIf="!contact.expanded"
+      />
+      <h3 *ngIf="!contact.expanded">{{ contact.name }}</h3>
+
+      <button *ngIf="!contact.expanded" (click)="toggleContact(contact)">
+        Open
+      </button>
+      <div *ngIf="contact.expanded">
+        <div [ngSwitch]="id">
+          <div *ngSwitchCase="1">
+            <button class="button" (click)="toggleContact(contact)">
+              <span class="X"></span>
+              <span class="Y"></span>
+              <div class="close">Close</div>
+            </button>
+            <form action="/submit" method="post">
+              
+              
+              <input
+                placeholder="Enter Name"
+                class="input"
+                name="Name"
+                type="text"
+              />
+              <input
+                placeholder="Enter Email"
+                class="input"
+                name="Email"
+                type="email"
+              />
+            </form>
+          </div>
+          <div *ngSwitchCase="2">You selected Blue</div>
+          <div *ngSwitchCase="3">You selected Green</div>
+          <div *ngSwitchCase="4">You selected Green</div>
+        </div>
+      </div>
     </div>
   </div>
 </main>

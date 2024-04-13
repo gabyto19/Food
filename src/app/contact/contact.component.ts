@@ -13,43 +13,54 @@ import {
   styleUrl: './contact.component.css',
   animations: [
     trigger('growShrink', [
-      state('shrink', style({
-        height: '200px', // Default height
-        flex: '1'
-      })),
-      state('grow', style({
-        height: '300px', // Expanded height
-        flex: '2'
-      })),
-      transition('shrink <=> grow', animate('300ms ease-in-out'))
-    ])
-  ]
+      state(
+        'shrink',
+        style({
+          height: '200px', // Default height
+          flex: '1',
+        })
+      ),
+      state(
+        'grow',
+        style({
+          height: '500px', // Expanded height
+          flex: '2',
+        })
+      ),
+      transition('shrink <=> grow', animate('300ms ease-in-out')),
+    ]),
+  ],
 })
 export class ContactComponent {
+  id: any;
   contacts = [
     {
       id: 1,
-      name: 'John Doe',
+      name: 'Email Us',
       description: 'Contact details for John Doe',
       expanded: false,
+      imageUrl: '/assets/imgs/Contact/icons/mail.png',
     },
     {
       id: 2,
-      name: 'Jane Smith',
+      name: 'Call Us',
       description: 'Contact details for Jane Smith',
       expanded: false,
+      imageUrl: '/assets/imgs/Contact/icons/call.png',
     },
     {
       id: 3,
-      name: 'William Johnson',
+      name: 'Live Chat',
       description: 'Contact details for William Johnson',
       expanded: false,
+      imageUrl: '/assets/imgs/Contact/icons/live.png',
     },
     {
       id: 4,
-      name: 'William Johnson',
+      name: 'Leave Feedback',
       description: 'Contact details for William Johnson',
       expanded: false,
+      imageUrl: '/assets/imgs/Contact/icons/feedback.png',
     },
   ];
 
@@ -66,9 +77,13 @@ export class ContactComponent {
     const expandedContact = this.contacts.find((contact) => contact.expanded);
     if (expandedContact) {
       // Assuming a 3-column layout: expanded item takes 2fr, others take 1fr each
-      return '1fr 2fr 1fr';
+      return '1fr 3fr 1fr';
     }
     // Default case: all items equal size
     return '1fr 1fr 1fr';
   }
+  click(id:any){
+    this.id = id;
+  }
+
 }

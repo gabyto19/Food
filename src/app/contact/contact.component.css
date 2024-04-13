@@ -1,5 +1,4 @@
-header
-{
+header {
   background-image: url("/assets/imgs/Contact/background.png");
   height: 563px;
   background-size: inherit;
@@ -13,18 +12,128 @@ main {
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  width: 60%;
+  gap: 60px;
+  width: 72%;
   margin: auto;
+}
+.grid-container img {
+  height: 70px;
+  width: 70px;
 }
 .grid-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  border: 1px solid #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
-  flex: 1; /* Adapt based on the layout */
-  /* Remove any fixed height if previously set */
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ff7a00;
+}
+
+.input {
+  max-width: 200px;
+  min-height: 40px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 17px #c8c8c8, -5px -5px 17px #ffffff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.input:focus {
+  background: #e8e8e8;
+  box-shadow: inset 5px 5px 17px #c8c8c8, inset -5px -5px 17px #ffffff;
+}
+button {
+  width: 100px;
+  height: 45px;
+  border: 3px solid #8eb193;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1.5em;
+}
+.button {
+  position: relative;
+  width: 4em;
+  height: 4em;
+  border: none;
+  background: rgba(180, 83, 107, 0.11);
+  border-radius: 5px;
+  transition: background 0.5s;
+}
+
+.X {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.Y {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 1.5px;
+  background-color: #fff;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  top: -70%;
+  left: 50%;
+  width: 3em;
+  height: 1.7em;
+  font-size: 12px;
+  background-color: rgb(19, 22, 24);
+  color: rgb(187, 229, 236);
+  border: none;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.button:hover {
+  background-color: rgb(211, 21, 21);
+}
+
+.button:active {
+  background-color: rgb(130, 0, 0);
+}
+
+.button:hover > .close {
+  animation: close 0.2s forwards 0.25s;
+}
+
+@keyframes close {
+  100% {
+    opacity: 1;
+  }
 }
