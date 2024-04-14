@@ -15,6 +15,7 @@ import { PlateComponent } from './buildup/plate/plate.component';
 import { UnderCategoryComponent } from './buildup/under-category/under-category.component';
 import { ProductsOfCategoryComponent } from './buildup/products-of-category/products-of-category.component';
 import { ContactComponent } from './contact/contact.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ContactComponent } from './contact/contact.component';
     UnderCategoryComponent,
     ProductsOfCategoryComponent,
     ContactComponent,
+    SignInComponent,
   ],
   imports: [BrowserAnimationsModule, BrowserModule, AppRoutingModule],
   providers: [],
