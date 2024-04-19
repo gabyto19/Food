@@ -9,13 +9,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BuildupComponent } from './buildup/buildup.component';
 import { CardComponent } from './buildup/card/card.component';
 import { CategoryDivComponent } from './buildup/category-div/category-div.component';
-import { CapacityComponent } from './buildup/capacity/capacity.component';
-import { NoteComponent } from './buildup/note/note.component';
 import { PlateComponent } from './buildup/plate/plate.component';
 import { UnderCategoryComponent } from './buildup/under-category/under-category.component';
 import { ProductsOfCategoryComponent } from './buildup/products-of-category/products-of-category.component';
 import { ContactComponent } from './contact/contact.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { CartComponent } from './buildup/cart/cart.component';
+import { FinishButtonsComponent } from './buildup/finish-buttons/finish-buttons.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +25,13 @@ import { SignInComponent } from './sign-in/sign-in.component';
     BuildupComponent,
     CardComponent,
     CategoryDivComponent,
-    CapacityComponent,
-    NoteComponent,
     PlateComponent,
     UnderCategoryComponent,
     ProductsOfCategoryComponent,
     ContactComponent,
     SignInComponent,
+    CartComponent,
+    FinishButtonsComponent,
   ],
   imports: [BrowserAnimationsModule, BrowserModule, AppRoutingModule],
   providers: [],
